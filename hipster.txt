@@ -4894,4 +4894,1285 @@ kejingeng@kejins-MacBook-Pro starter-web % git branch
   Develop
 * master
 kejingeng@kejins-MacBook-Pro starter-web % mate hipster.txt
+kejingeng@kejins-MacBook-Pro starter-web % git commit -am "Update hipster.txt"
+[master 05df8a0] Update hipster.txt
+ Committer: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 535 insertions(+)
+kejingeng@kejins-MacBook-Pro starter-web % git pull origin master
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+From https://github.com/NobodyKJ/starter-web
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+kejingeng@kejins-MacBook-Pro starter-web % git push origin master 
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (20/20), 3.61 KiB | 1.80 MiB/s, done.
+Total 20 (delta 14), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (14/14), completed with 6 local objects.
+To https://github.com/NobodyKJ/starter-web.git
+   e4cbc8c..05df8a0  master -> master
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all
+* 05df8a0 (HEAD -> master, origin/master, origin/HEAD) Update hipster.txt
+* c98ffe6 Changes after git-stash-branch command
+* 7f45be2 update to humans files after stash pop
+* fdc4b56 Quick fix after stash on README file
+* 350a504 Done with simple.html updates
+* 7b44805 Quick fix in production to imporve copyright notices
+* e4cbc8c update hipster.txt
+* 7fecd3c local: updating simple.html copyright
+* d64c991 remote : minor changes to index.html file
+* 39814fb update hipster.txt
+* ad248bc adding changes after rebasing conflict
+* d1beac4 fb adding some trouble to simple.html
+* 9495b00 mb comflicting changes brewing
+* fb69eb3 mb before rebase conflicts
+* f85d6e6 Adding another change after rebase
+* bb77891 Adding another change after rebase
+* fba85c4 Thanks all my students
+* 2340d9c adding oneliner to README for rebase example
+* 36da9d4 update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % git tag myTag
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all
+* 05df8a0 (HEAD -> master, tag: myTag, origin/master, origin/HEAD) Update hipster.txt
+* c98ffe6 Changes after git-stash-branch command
+* 7f45be2 update to humans files after stash pop
+* fdc4b56 Quick fix after stash on README file
+* 350a504 Done with simple.html updates
+* 7b44805 Quick fix in production to imporve copyright notices
+* e4cbc8c update hipster.txt
+* 7fecd3c local: updating simple.html copyright
+* d64c991 remote : minor changes to index.html file
+* 39814fb update hipster.txt
+* ad248bc adding changes after rebasing conflict
+* d1beac4 fb adding some trouble to simple.html
+* 9495b00 mb comflicting changes brewing
+* fb69eb3 mb before rebase conflicts
+* f85d6e6 Adding another change after rebase
+* bb77891 Adding another change after rebase
+* fba85c4 Thanks all my students
+* 2340d9c adding oneliner to README for rebase example
+* 36da9d4 update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % git tag --list
+myTag
+kejingeng@kejins-MacBook-Pro starter-web % git show myTag
+commit 05df8a0d937dd40d5193b35dc0e532e0382c73f6 (HEAD -> master, tag: myTag, origin/master, origin/HEAD)
+Author: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Date:   Fri Sep 24 13:28:14 2021 -0700
+
+    Update hipster.txt
+
+diff --git a/hipster.txt b/hipster.txt
+index 68014ac..e15c880 100644
+--- a/hipster.txt
++++ b/hipster.txt
+@@ -4359,4 +4359,539 @@ kejingeng@kejins-MacBook-Pro starter-web % git branch
+   Develop
+   bigtrouble
+ * master
++kejingeng@kejins-MacBook-Pro starter-web % mate hipster.txt
++kejingeng@kejins-MacBook-Pro starter-web % git commit -am "update hipster.txt" 
++[master e4cbc8c] update hipster.txt
++ Committer: kejin geng <kejingeng@kejins-MacBook-Pro.local>
++Your name and email address were configured automatically based
++on your username and hostname. Please check that they are accurate.
++You can suppress this message by setting them explicitly:
++
++    git config --global user.name "Your Name"
++    git config --global user.email you@example.com
++
++After doing this, you may fix the identity used for this commit with:
++
++    git commit --amend --reset-author
++
++ 1 file changed, 157 insertions(+)
++kejingeng@kejins-MacBook-Pro starter-web % git branch
++  Develop
++  bigtrouble
++* master
++kejingeng@kejins-MacBook-Pro starter-web % git branch -d bigtrouble
++Deleted branch bigtrouble (was ad248bc).
++kejingeng@kejins-MacBook-Pro starter-web % git pull origin master
++hint: Pulling without specifying how to reconcile divergent branches is
++hint: discouraged. You can squelch this message by running one of the following
++hint: commands sometime before your next pull:
++hint: 
++hint:   git config pull.rebase false  # merge (the default strategy)
++hint:   git config pull.rebase true   # rebase
++hint:   git config pull.ff only       # fast-forward only
++hint: 
++hint: You can replace "git config" with "git config --global" to set a default
++hint: preference for all repositories. You can also pass --rebase, --no-rebase,
++hint: or --ff-only on the command line to override the configured default per
++hint: invocation.
++From https://github.com/NobodyKJ/starter-web
++ * branch            master     -> FETCH_HEAD
++Already up to date.
++kejingeng@kejins-MacBook-Pro starter-web % git push origin master
++Enumerating objects: 9, done.
++Counting objects: 100% (9/9), done.
++Delta compression using up to 12 threads
++Compressing objects: 100% (6/6), done.
++Writing objects: 100% (6/6), 1.23 KiB | 1.23 MiB/s, done.
++Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
++remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
++To https://github.com/NobodyKJ/starter-web.git
++   d64c991..e4cbc8c  master -> master
++kejingeng@kejins-MacBook-Pro starter-web % mate simple.html
++kejingeng@kejins-MacBook-Pro starter-web % git status
++On branch master
++Your branch is up to date with 'origin/master'.
++
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git restore <file>..." to discard changes in working directory)
++       modified:   simple.html
++
++no changes added to commit (use "git add" and/or "git commit -a")
++kejingeng@kejins-MacBook-Pro starter-web % git stash 
++Saved working directory and index state WIP on master: e4cbc8c update hipster.txt
++kejingeng@kejins-MacBook-Pro starter-web % mate simple.html
++kejingeng@kejins-MacBook-Pro starter-web % mate README.md
++kejingeng@kejins-MacBook-Pro starter-web % git commit -am "Quick fix in production to imporve copyright notices"
+kejingeng@kejins-MacBook-Pro starter-web % git tag --delete myTag
+Deleted tag 'myTag' (was 05df8a0)
+kejingeng@kejins-MacBook-Pro starter-web % git tag --list
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all
+* 05df8a0 (HEAD -> master, origin/master, origin/HEAD) Update hipster.txt
+* c98ffe6 Changes after git-stash-branch command
+* 7f45be2 update to humans files after stash pop
+* fdc4b56 Quick fix after stash on README file
+* 350a504 Done with simple.html updates
+* 7b44805 Quick fix in production to imporve copyright notices
+* e4cbc8c update hipster.txt
+* 7fecd3c local: updating simple.html copyright
+* d64c991 remote : minor changes to index.html file
+* 39814fb update hipster.txt
+* ad248bc adding changes after rebasing conflict
+* d1beac4 fb adding some trouble to simple.html
+* 9495b00 mb comflicting changes brewing
+* fb69eb3 mb before rebase conflicts
+* f85d6e6 Adding another change after rebase
+* bb77891 Adding another change after rebase
+* fba85c4 Thanks all my students
+* 2340d9c adding oneliner to README for rebase example
+* 36da9d4 update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % git tag -a v-1.0
+kejingeng@kejins-MacBook-Pro starter-web % gti tag --list
+zsh: command not found: gti
+kejingeng@kejins-MacBook-Pro starter-web % git tag --list
+v-1.0
+kejingeng@kejins-MacBook-Pro starter-web % git show v-1.0
+tag v-1.0
+Tagger: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Date:   Fri Sep 24 14:07:05 2021 -0700
+
+Release 1.0
+
+commit 05df8a0d937dd40d5193b35dc0e532e0382c73f6 (HEAD -> master, tag: v-1.0, origin/master, origin/HEAD)
+Author: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Date:   Fri Sep 24 13:28:14 2021 -0700
+
+    Update hipster.txt
+
+diff --git a/hipster.txt b/hipster.txt
+index 68014ac..e15c880 100644
+--- a/hipster.txt
++++ b/hipster.txt
+@@ -4359,4 +4359,539 @@ kejingeng@kejins-MacBook-Pro starter-web % git branch
+   Develop
+   bigtrouble
+ * master
++kejingeng@kejins-MacBook-Pro starter-web % mate hipster.txt
++kejingeng@kejins-MacBook-Pro starter-web % git commit -am "update hipster.txt" 
++[master e4cbc8c] update hipster.txt
++ Committer: kejin geng <kejingeng@kejins-MacBook-Pro.local>
++Your name and email address were configured automatically based
++on your username and hostname. Please check that they are accurate.
++You can suppress this message by setting them explicitly:
++
++    git config --global user.name "Your Name"
++    git config --global user.email you@example.com
++
++After doing this, you may fix the identity used for this commit with:
++
++    git commit --amend --reset-author
++
++ 1 file changed, 157 insertions(+)
++kejingeng@kejins-MacBook-Pro starter-web % git branch
++  Develop
++  bigtrouble
++* master
++kejingeng@kejins-MacBook-Pro starter-web % git branch -d bigtrouble
++Deleted branch bigtrouble (was ad248bc).
++kejingeng@kejins-MacBook-Pro starter-web % git pull origin master
++hint: Pulling without specifying how to reconcile divergent branches is
++hint: discouraged. You can squelch this message by running one of the following
++hint: commands sometime before your next pull:
++hint: 
++hint:   git config pull.rebase false  # merge (the default strategy)
++hint:   git config pull.rebase true   # rebase
++hint:   git config pull.ff only       # fast-forward only
++hint: 
++hint: You can replace "git config" with "git config --global" to set a default
++hint: preference for all repositories. You can also pass --rebase, --no-rebase,
++hint: or --ff-only on the command line to override the configured default per
++hint: invocation.
++From https://github.com/NobodyKJ/starter-web
++ * branch            master     -> FETCH_HEAD
++Already up to date.
++kejingeng@kejins-MacBook-Pro starter-web % git push origin master
++Enumerating objects: 9, done.
++Counting objects: 100% (9/9), done.
++Delta compression using up to 12 threads
++Compressing objects: 100% (6/6), done.
++Writing objects: 100% (6/6), 1.23 KiB | 1.23 MiB/s, done.
++Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
++remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
++To https://github.com/NobodyKJ/starter-web.git
++   d64c991..e4cbc8c  master -> master
++kejingeng@kejins-MacBook-Pro starter-web % mate simple.html
++kejingeng@kejins-MacBook-Pro starter-web % git status
++On branch master
++Your branch is up to date with 'origin/master'.
++
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git restore <file>..." to discard changes in working directory)
++       modified:   simple.html
++
+kejingeng@kejins-MacBook-Pro starter-web % 
+kejingeng@kejins-MacBook-Pro starter-web % git tag --list
+v-1.0
+kejingeng@kejins-MacBook-Pro starter-web % mate index.html
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all
+* 05df8a0 (HEAD -> master, tag: v-1.0, origin/master, origin/HEAD) Update hipster.txt
+* c98ffe6 Changes after git-stash-branch command
+* 7f45be2 update to humans files after stash pop
+* fdc4b56 Quick fix after stash on README file
+* 350a504 Done with simple.html updates
+* 7b44805 Quick fix in production to imporve copyright notices
+* e4cbc8c update hipster.txt
+* 7fecd3c local: updating simple.html copyright
+* d64c991 remote : minor changes to index.html file
+* 39814fb update hipster.txt
+* ad248bc adding changes after rebasing conflict
+* d1beac4 fb adding some trouble to simple.html
+* 9495b00 mb comflicting changes brewing
+* fb69eb3 mb before rebase conflicts
+* f85d6e6 Adding another change after rebase
+* bb77891 Adding another change after rebase
+* fba85c4 Thanks all my students
+* 2340d9c adding oneliner to README for rebase example
+* 36da9d4 update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % git commit -a
+Aborting commit due to empty commit message.
+kejingeng@kejins-MacBook-Pro starter-web % git commit -am "Update index.html"
+[master e559634] Update index.html
+ Committer: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+kejingeng@kejins-MacBook-Pro starter-web % mate index.html
+kejingeng@kejins-MacBook-Pro starter-web % git commit -am "Update index.html"
+[master 254c40c] Update index.html
+ Committer: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all
+* 254c40c (HEAD -> master) Update index.html
+* e559634 Update index.html
+* 05df8a0 (tag: v-1.0, origin/master, origin/HEAD) Update hipster.txt
+* c98ffe6 Changes after git-stash-branch command
+* 7f45be2 update to humans files after stash pop
+* fdc4b56 Quick fix after stash on README file
+* 350a504 Done with simple.html updates
+* 7b44805 Quick fix in production to imporve copyright notices
+* e4cbc8c update hipster.txt
+* 7fecd3c local: updating simple.html copyright
+* d64c991 remote : minor changes to index.html file
+* 39814fb update hipster.txt
+* ad248bc adding changes after rebasing conflict
+* d1beac4 fb adding some trouble to simple.html
+* 9495b00 mb comflicting changes brewing
+* fb69eb3 mb before rebase conflicts
+* f85d6e6 Adding another change after rebase
+* bb77891 Adding another change after rebase
+* fba85c4 Thanks all my students
+* 2340d9c adding oneliner to README for rebase example
+* 36da9d4 update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % git tag -a v-1.1
+kejingeng@kejins-MacBook-Pro starter-web % mate simple.html
+kejingeng@kejins-MacBook-Pro starter-web % git commit -am "Update simple.html"       
+[master a24708f] Update simple.html
+ Committer: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+kejingeng@kejins-MacBook-Pro starter-web % git commit --amend
+[master 7ca75fe] Update for tags for 1.2 Update simple.html
+ Date: Fri Sep 24 14:15:19 2021 -0700
+ Committer: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+kejingeng@kejins-MacBook-Pro starter-web % git tag v-1.2 -m "Release 1.2"
+kejingeng@kejins-MacBook-Pro starter-web % git tag --list
+v-1.0
+v-1.1
+v-1.2
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all
+* 7ca75fe (HEAD -> master, tag: v-1.2) Update for tags for 1.2 Update simple.html
+* 254c40c (tag: v-1.1) Update index.html
+* e559634 Update index.html
+* 05df8a0 (tag: v-1.0, origin/master, origin/HEAD) Update hipster.txt
+* c98ffe6 Changes after git-stash-branch command
+* 7f45be2 update to humans files after stash pop
+* fdc4b56 Quick fix after stash on README file
+* 350a504 Done with simple.html updates
+* 7b44805 Quick fix in production to imporve copyright notices
+* e4cbc8c update hipster.txt
+* 7fecd3c local: updating simple.html copyright
+* d64c991 remote : minor changes to index.html file
+* 39814fb update hipster.txt
+* ad248bc adding changes after rebasing conflict
+* d1beac4 fb adding some trouble to simple.html
+* 9495b00 mb comflicting changes brewing
+* fb69eb3 mb before rebase conflicts
+* f85d6e6 Adding another change after rebase
+* bb77891 Adding another change after rebase
+* fba85c4 Thanks all my students
+* 2340d9c adding oneliner to README for rebase example
+* 36da9d4 update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % git diff v-1.0 v-1.2
+diff --git a/index.html b/index.html
+index 41c9e34..a699467 100644
+--- a/index.html
++++ b/index.html
+@@ -6,7 +6,7 @@
+     <head>
+         <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+-        <title>Stash Example</title>
++        <title>Title for tagging  Examples</title>
+         <meta name="description" content="">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+diff --git a/simple.html b/simple.html
+index 3d000c0..fb71d49 100644
+--- a/simple.html
++++ b/simple.html
+@@ -4,7 +4,7 @@
+        Some silly changes from the master branch
+ -->
+ <head>
+-       <title>Updating Titles for stash bransch example </title>
++       <title>Updating Titles for tagging compare example </title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+                body {
+kejingeng@kejins-MacBook-Pro starter-web % git difftool v-1.0 v-1.2                  
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all
+* 7ca75fe (HEAD -> master, tag: v-1.2) Update for tags for 1.2 Update simple.html
+* 254c40c (tag: v-1.1) Update index.html
+* e559634 Update index.html
+* 05df8a0 (tag: v-1.0, origin/master, origin/HEAD) Update hipster.txt
+* c98ffe6 Changes after git-stash-branch command
+* 7f45be2 update to humans files after stash pop
+* fdc4b56 Quick fix after stash on README file
+* 350a504 Done with simple.html updates
+* 7b44805 Quick fix in production to imporve copyright notices
+* e4cbc8c update hipster.txt
+* 7fecd3c local: updating simple.html copyright
+* d64c991 remote : minor changes to index.html file
+* 39814fb update hipster.txt
+* ad248bc adding changes after rebasing conflict
+* d1beac4 fb adding some trouble to simple.html
+* 9495b00 mb comflicting changes brewing
+* fb69eb3 mb before rebase conflicts
+* f85d6e6 Adding another change after rebase
+* bb77891 Adding another change after rebase
+* fba85c4 Thanks all my students
+* 2340d9c adding oneliner to README for rebase example
+* 36da9d4 update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % git tag -a v-0.9-beta-7852665
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all
+* 7ca75fe (HEAD -> master, tag: v-1.2, tag: v-0.9-beta-7852665) Update for tags for 1.2 Update simple.html
+* 254c40c (tag: v-1.1) Update index.html
+* e559634 Update index.html
+* 05df8a0 (tag: v-1.0, origin/master, origin/HEAD) Update hipster.txt
+* c98ffe6 Changes after git-stash-branch command
+* 7f45be2 update to humans files after stash pop
+* fdc4b56 Quick fix after stash on README file
+* 350a504 Done with simple.html updates
+* 7b44805 Quick fix in production to imporve copyright notices
+* e4cbc8c update hipster.txt
+* 7fecd3c local: updating simple.html copyright
+* d64c991 remote : minor changes to index.html file
+* 39814fb update hipster.txt
+* ad248bc adding changes after rebasing conflict
+* d1beac4 fb adding some trouble to simple.html
+* 9495b00 mb comflicting changes brewing
+* fb69eb3 mb before rebase conflicts
+* f85d6e6 Adding another change after rebase
+* bb77891 Adding another change after rebase
+* fba85c4 Thanks all my students
+* 2340d9c adding oneliner to README for rebase example
+* 36da9d4 update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % git tag -a v-0.9-beta 7852665           
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all
+* 7ca75fe (HEAD -> master, tag: v-1.2, tag: v-0.9-beta-7852665) Update for tags for 1.2 Update simple.html
+* 254c40c (tag: v-1.1) Update index.html
+* e559634 Update index.html
+* 05df8a0 (tag: v-1.0, origin/master, origin/HEAD) Update hipster.txt
+* c98ffe6 Changes after git-stash-branch command
+* 7f45be2 update to humans files after stash pop
+* fdc4b56 Quick fix after stash on README file
+* 350a504 Done with simple.html updates
+* 7b44805 Quick fix in production to imporve copyright notices
+* e4cbc8c update hipster.txt
+* 7fecd3c local: updating simple.html copyright
+* d64c991 remote : minor changes to index.html file
+* 39814fb update hipster.txt
+* ad248bc adding changes after rebasing conflict
+* d1beac4 fb adding some trouble to simple.html
+* 9495b00 mb comflicting changes brewing
+* fb69eb3 mb before rebase conflicts
+* f85d6e6 Adding another change after rebase
+* bb77891 Adding another change after rebase
+* fba85c4 Thanks all my students
+* 2340d9c adding oneliner to README for rebase example
+* 36da9d4 update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 (tag: v-0.9-beta) renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % git tag -a v-0.8-alpha fb69eb3       
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all
+* 7ca75fe (HEAD -> master, tag: v-1.2, tag: v-0.9-beta-7852665) Update for tags for 1.2 Update simple.html
+* 254c40c (tag: v-1.1) Update index.html
+* e559634 Update index.html
+* 05df8a0 (tag: v-1.0, origin/master, origin/HEAD) Update hipster.txt
+* c98ffe6 Changes after git-stash-branch command
+* 7f45be2 update to humans files after stash pop
+* fdc4b56 Quick fix after stash on README file
+* 350a504 Done with simple.html updates
+* 7b44805 Quick fix in production to imporve copyright notices
+* e4cbc8c update hipster.txt
+* 7fecd3c local: updating simple.html copyright
+* d64c991 remote : minor changes to index.html file
+* 39814fb update hipster.txt
+* ad248bc adding changes after rebasing conflict
+* d1beac4 fb adding some trouble to simple.html
+* 9495b00 mb comflicting changes brewing
+* fb69eb3 (tag: v-0.8-alpha) mb before rebase conflicts
+* f85d6e6 Adding another change after rebase
+* bb77891 Adding another change after rebase
+* fba85c4 Thanks all my students
+* 2340d9c adding oneliner to README for rebase example
+* 36da9d4 update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 (tag: v-0.9-beta) renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % git tag -a v-0.8-alpha -f a75aa77         
+Updated tag 'v-0.8-alpha' (was d5eb25e)
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all
+* 7ca75fe (HEAD -> master, tag: v-1.2, tag: v-0.9-beta-7852665) Update for tags for 1.2 Update simple.html
+* 254c40c (tag: v-1.1) Update index.html
+* e559634 Update index.html
+* 05df8a0 (tag: v-1.0, origin/master, origin/HEAD) Update hipster.txt
+* c98ffe6 Changes after git-stash-branch command
+* 7f45be2 update to humans files after stash pop
+* fdc4b56 Quick fix after stash on README file
+* 350a504 Done with simple.html updates
+* 7b44805 Quick fix in production to imporve copyright notices
+* e4cbc8c update hipster.txt
+* 7fecd3c local: updating simple.html copyright
+* d64c991 remote : minor changes to index.html file
+* 39814fb update hipster.txt
+* ad248bc adding changes after rebasing conflict
+* d1beac4 fb adding some trouble to simple.html
+* 9495b00 mb comflicting changes brewing
+* fb69eb3 mb before rebase conflicts
+* f85d6e6 Adding another change after rebase
+* bb77891 Adding another change after rebase
+* fba85c4 Thanks all my students
+* 2340d9c adding oneliner to README for rebase example
+* 36da9d4 update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 (tag: v-0.9-beta) renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 (tag: v-0.8-alpha) Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+kejingeng@kejins-MacBook-Pro starter-web % git tag --list
+v-0.8-alpha
+v-0.9-beta
+v-0.9-beta-7852665
+v-1.0
+v-1.1
+v-1.2
+kejingeng@kejins-MacBook-Pro starter-web % rm v-0.9-beta-7852665
+rm: v-0.9-beta-7852665: No such file or directory
+kejingeng@kejins-MacBook-Pro starter-web % git tag --list
+v-0.8-alpha
+v-0.9-beta
+v-0.9-beta-7852665
+v-1.0
+v-1.1
+v-1.2
+kejingeng@kejins-MacBook-Pro starter-web % git rm -rf v-0.9-beta-7852665
+fatal: pathspec 'v-0.9-beta-7852665' did not match any files
+kejingeng@kejins-MacBook-Pro starter-web % git rm v-0.9-beta-7852665    
+fatal: pathspec 'v-0.9-beta-7852665' did not match any files
+kejingeng@kejins-MacBook-Pro starter-web % git tag -d v-0.9-beta-7852665
+Deleted tag 'v-0.9-beta-7852665' (was 854eccf)
+kejingeng@kejins-MacBook-Pro starter-web % git list
+git: 'list' is not a git command. See 'git --help'.
+
+The most similar command is
+	hist
+kejingeng@kejins-MacBook-Pro starter-web % git tag list
+kejingeng@kejins-MacBook-Pro starter-web % git tag --list
+list
+v-0.8-alpha
+v-0.9-beta
+v-1.0
+v-1.1
+v-1.2
+kejingeng@kejins-MacBook-Pro starter-web % git tag -d list              
+Deleted tag 'list' (was 7ca75fe)
+kejingeng@kejins-MacBook-Pro starter-web % git tag --list 
+v-0.8-alpha
+v-0.9-beta
+v-1.0
+v-1.1
+v-1.2
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all
+* 7ca75fe (HEAD -> master, tag: v-1.2) Update for tags for 1.2 Update simple.html
+* 254c40c (tag: v-1.1) Update index.html
+* e559634 Update index.html
+* 05df8a0 (tag: v-1.0, origin/master, origin/HEAD) Update hipster.txt
+* c98ffe6 Changes after git-stash-branch command
+* 7f45be2 update to humans files after stash pop
+* fdc4b56 Quick fix after stash on README file
+* 350a504 Done with simple.html updates
+* 7b44805 Quick fix in production to imporve copyright notices
+* e4cbc8c update hipster.txt
+* 7fecd3c local: updating simple.html copyright
+* d64c991 remote : minor changes to index.html file
+* 39814fb update hipster.txt
+* ad248bc adding changes after rebasing conflict
+* d1beac4 fb adding some trouble to simple.html
+* 9495b00 mb comflicting changes brewing
+* fb69eb3 mb before rebase conflicts
+* f85d6e6 Adding another change after rebase
+* bb77891 Adding another change after rebase
+* fba85c4 Thanks all my students
+* 2340d9c adding oneliner to README for rebase example
+* 36da9d4 update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 (tag: v-0.9-beta) renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 (tag: v-0.8-alpha) Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % git push origin v-0.9-beta
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 178 bytes | 178.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NobodyKJ/starter-web.git
+ * [new tag]         v-0.9-beta -> v-0.9-beta
+kejingeng@kejins-MacBook-Pro starter-web % git push origin v-1.1
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 727 bytes | 727.00 KiB/s, done.
+Total 7 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/NobodyKJ/starter-web.git
+ * [new tag]         v-1.1 -> v-1.1
+kejingeng@kejins-MacBook-Pro starter-web % git push origin master --tags
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 767 bytes | 767.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/NobodyKJ/starter-web.git
+   05df8a0..7ca75fe  master -> master
+ * [new tag]         v-0.8-alpha -> v-0.8-alpha
+ * [new tag]         v-1.0 -> v-1.0
+ * [new tag]         v-1.2 -> v-1.2
+kejingeng@kejins-MacBook-Pro starter-web % git tag --list
+v-0.8-alpha
+v-0.9-beta
+v-1.0
+v-1.1
+v-1.2
+kejingeng@kejins-MacBook-Pro starter-web % git push origin :v-0.8-alpha
+To https://github.com/NobodyKJ/starter-web.git
+ - [deleted]         v-0.8-alpha
 kejingeng@kejins-MacBook-Pro starter-web % 
