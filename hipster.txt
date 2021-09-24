@@ -3328,3 +3328,878 @@ Your branch is ahead of 'origin/master' by 9 commits.
 
 nothing to commit, working tree clean
 kejingeng@kejins-MacBook-Pro starter-web % mate hipster.txt
+kejingeng@kejins-MacBook-Pro starter-web % git status
+On branch master
+Your branch is ahead of 'origin/master' by 9 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hipster.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+kejingeng@kejins-MacBook-Pro starter-web % git commit -m "update hipster.txt"
+On branch master
+Your branch is ahead of 'origin/master' by 9 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hipster.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+kejingeng@kejins-MacBook-Pro starter-web % git commit -am "update hipster.txt"
+[master 36da9d4] update hipster.txt
+ Committer: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1000 insertions(+)
+kejingeng@kejins-MacBook-Pro starter-web % git status
+On branch master
+Your branch is ahead of 'origin/master' by 10 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+kejingeng@kejins-MacBook-Pro starter-web % git pull orignal master
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: 'orignal' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+kejingeng@kejins-MacBook-Pro starter-web % git pull origin master 
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+From https://github.com/NobodyKJ/starter-web
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+kejingeng@kejins-MacBook-Pro starter-web % git push origin master
+Enumerating objects: 36, done.
+Counting objects: 100% (36/36), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (30/30), 10.54 KiB | 3.51 MiB/s, done.
+Total 30 (delta 22), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (22/22), completed with 5 local objects.
+To https://github.com/NobodyKJ/starter-web.git
+   e6aa2aa..36da9d4  master -> master
+kejingeng@kejins-MacBook-Pro starter-web % git checkout -b myfeature
+Switched to a new branch 'myfeature'
+kejingeng@kejins-MacBook-Pro starter-web % mate human.txt
+kejingeng@kejins-MacBook-Pro starter-web % mate humans.txt
+kejingeng@kejins-MacBook-Pro starter-web % git status
+On branch myfeature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   humans.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+kejingeng@kejins-MacBook-Pro starter-web % git commit -am "Thanks all my students"
+[myfeature 4b1f0a7] Thanks all my students
+ Committer: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+kejingeng@kejins-MacBook-Pro starter-web % git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+kejingeng@kejins-MacBook-Pro starter-web % mate README.md
+kejingeng@kejins-MacBook-Pro starter-web % git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+kejingeng@kejins-MacBook-Pro starter-web % git commit -am "adding oneliner to README for rebase example"
+[master 2340d9c] adding oneliner to README for rebase example
+ Committer: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all
+* 2340d9c (HEAD -> master) adding oneliner to README for rebase example
+| * 4b1f0a7 (myfeature) Thanks all my students
+|/  
+* 36da9d4 (origin/master, origin/HEAD) update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % git checkout myfeature
+Switched to branch 'myfeature'
+kejingeng@kejins-MacBook-Pro starter-web % git rebase master
+Successfully rebased and updated refs/heads/myfeature.
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all
+* fba85c4 (HEAD -> myfeature) Thanks all my students
+* 2340d9c (master) adding oneliner to README for rebase example
+* 36da9d4 (origin/master, origin/HEAD) update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % git checkout myfeature
+Already on 'myfeature'
+kejingeng@kejins-MacBook-Pro starter-web % mate README.md
+kejingeng@kejins-MacBook-Pro starter-web % git status
+On branch myfeature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+kejingeng@kejins-MacBook-Pro starter-web % git commit -am "Adding another change after rebase"
+[myfeature bb77891] Adding another change after rebase
+ Committer: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all         
+* bb77891 (HEAD -> myfeature) Adding another change after rebase
+* fba85c4 Thanks all my students
+* 2340d9c (master) adding oneliner to README for rebase example
+* 36da9d4 (origin/master, origin/HEAD) update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % mate README.md
+kejingeng@kejins-MacBook-Pro starter-web % git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+	README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+kejingeng@kejins-MacBook-Pro starter-web % mate README.md
+kejingeng@kejins-MacBook-Pro starter-web % git diff master myfeature
+diff --git a/README.md b/README.md
+index b71194a..6dbd844 100644
+--- a/README.md
++++ b/README.md
+@@ -1,6 +1,6 @@
+ # Starter Web Repo
+ 
+-This repository is for showing how Git and GitHub work Adding a line for rebase example
++This repository is for showing how Git and GitHub work, Adding a line for rebase example, more change on myfeature branch too.
+ ## Introduction
+ This is example is to show different parts of th eGit repository and various commands using a web project
+ ## Purpose
+diff --git a/humans.txt b/humans.txt
+index aca7b56..c41ffda 100644
+--- a/humans.txt
++++ b/humans.txt
+@@ -7,7 +7,7 @@
+ 
+ # THANKS
+ 
+-    <name>
++    All the students
+ 
+ # TECHNOLOGY COLOPHON
+ 
+kejingeng@kejins-MacBook-Pro starter-web % git merge myfeature
+Already up to date.
+kejingeng@kejins-MacBook-Pro starter-web % git branch
+  Develop
+  master
+* myfeature
+kejingeng@kejins-MacBook-Pro starter-web % git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+	README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+kejingeng@kejins-MacBook-Pro starter-web % mate README.md
+kejingeng@kejins-MacBook-Pro starter-web % gir branch
+zsh: command not found: gir
+kejingeng@kejins-MacBook-Pro starter-web % git branch
+  Develop
+  master
+* myfeature
+kejingeng@kejins-MacBook-Pro starter-web % git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+	README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+kejingeng@kejins-MacBook-Pro starter-web % git status
+On branch myfeature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+kejingeng@kejins-MacBook-Pro starter-web % git commit -am "Adding another change after rebase"
+[myfeature f85d6e6] Adding another change after rebase
+ Committer: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+kejingeng@kejins-MacBook-Pro starter-web % git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+kejingeng@kejins-MacBook-Pro starter-web % mate README.md
+kejingeng@kejins-MacBook-Pro starter-web % git diff master myfeature
+diff --git a/README.md b/README.md
+index b71194a..733ca22 100644
+--- a/README.md
++++ b/README.md
+@@ -1,6 +1,6 @@
+ # Starter Web Repo
+ 
+-This repository is for showing how Git and GitHub work Adding a line for rebase example
++This repository is for showing how Git and GitHub work, Adding a line for rebase example, more change on myfeature branch too. 
+ ## Introduction
+ This is example is to show different parts of th eGit repository and various commands using a web project
+ ## Purpose
+diff --git a/humans.txt b/humans.txt
+index aca7b56..c41ffda 100644
+--- a/humans.txt
++++ b/humans.txt
+@@ -7,7 +7,7 @@
+ 
+ # THANKS
+ 
+-    <name>
++    All the students
+ 
+ # TECHNOLOGY COLOPHON
+ 
+kejingeng@kejins-MacBook-Pro starter-web % git merge myfeature
+Updating 2340d9c..f85d6e6
+Fast-forward
+ README.md  | 2 +-
+ humans.txt | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+kejingeng@kejins-MacBook-Pro starter-web % git branch -d myfeature
+Deleted branch myfeature (was f85d6e6).
+kejingeng@kejins-MacBook-Pro starter-web % mate simple.html
+kejingeng@kejins-MacBook-Pro starter-web % git commit -am "mb before rebase conflicts"
+[master fb69eb3] mb before rebase conflicts
+ Committer: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+kejingeng@kejins-MacBook-Pro starter-web % git checkout -b bigtrouble
+Switched to a new branch 'bigtrouble'
+kejingeng@kejins-MacBook-Pro starter-web % mate simple.html 
+kejingeng@kejins-MacBook-Pro starter-web % git commit -am "fb adding some trouble to simple.html"
+[bigtrouble 807c5b8] fb adding some trouble to simple.html
+ Committer: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+kejingeng@kejins-MacBook-Pro starter-web % git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+kejingeng@kejins-MacBook-Pro starter-web % maste simple.html
+zsh: command not found: maste
+kejingeng@kejins-MacBook-Pro starter-web % mate simple.html 
+kejingeng@kejins-MacBook-Pro starter-web % git commit -am "mb comflicting changes brewing"
+[master 9495b00] mb comflicting changes brewing
+ Committer: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+kejingeng@kejins-MacBook-Pro starter-web % git status
+On branch master
+Your branch is ahead of 'origin/master' by 6 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+kejingeng@kejins-MacBook-Pro starter-web % mate simple.html
+kejingeng@kejins-MacBook-Pro starter-web % git branch
+  Develop
+  bigtrouble
+* master
+kejingeng@kejins-MacBook-Pro starter-web % git diff master bigtrouble
+diff --git a/simple.html b/simple.html
+index 7143a14..1d607bd 100644
+--- a/simple.html
++++ b/simple.html
+@@ -1,10 +1,10 @@
+ <!DOCTYPE html>
+ <!--
+        copyright 2014 Git.Traning
+-       Some silly changes from the master branch
++       There changes are from the feature branch bigtrouble
+ -->
+ <head>
+-       <title>Silly changes on master</title>
++       <title>Lots of troubles </title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+                body {
+@@ -16,10 +16,9 @@
+ </head>
+ <body>
+        <main class="container">
+-       <!-- Junk Filler content -->
++       <!-- Content Goes Here -->
+                <p>
+-                       Just some content
+-                       Not sure if we need replace this
++                       Just nothing but troubles
+                </p>
+        </main>
+        <footer class="container">
+kejingeng@kejins-MacBook-Pro starter-web % git difftool master bigtrouble
+kejingeng@kejins-MacBook-Pro starter-web % git branch       
+  Develop
+  bigtrouble
+* master
+kejingeng@kejins-MacBook-Pro starter-web % git rebase master
+Current branch master is up to date.
+kejingeng@kejins-MacBook-Pro starter-web % git checkout bigtouble
+error: pathspec 'bigtouble' did not match any file(s) known to git
+kejingeng@kejins-MacBook-Pro starter-web % git difftool master bigtrouble
+kejingeng@kejins-MacBook-Pro starter-web % git rebase master
+Current branch master is up to date.
+kejingeng@kejins-MacBook-Pro starter-web % gir branch
+zsh: command not found: gir
+kejingeng@kejins-MacBook-Pro starter-web % git branch
+  Develop
+  bigtrouble
+* master
+kejingeng@kejins-MacBook-Pro starter-web % git checkout bigtrouble
+Switched to branch 'bigtrouble'
+kejingeng@kejins-MacBook-Pro starter-web % git difftool master bigtrouble
+kejingeng@kejins-MacBook-Pro starter-web % git rebase master
+Auto-merging simple.html
+CONFLICT (content): Merge conflict in simple.html
+error: could not apply 807c5b8... fb adding some trouble to simple.html
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 807c5b8... fb adding some trouble to simple.html
+kejingeng@kejins-MacBook-Pro starter-web % git rebase --abort
+kejingeng@kejins-MacBook-Pro starter-web % git status
+On branch bigtrouble
+nothing to commit, working tree clean
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all
+* 9495b00 (master) mb comflicting changes brewing
+| * 807c5b8 (HEAD -> bigtrouble) fb adding some trouble to simple.html
+|/  
+* fb69eb3 mb before rebase conflicts
+* f85d6e6 Adding another change after rebase
+* bb77891 Adding another change after rebase
+* fba85c4 Thanks all my students
+* 2340d9c adding oneliner to README for rebase example
+* 36da9d4 (origin/master, origin/HEAD) update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % git rebase master
+Auto-merging simple.html
+CONFLICT (content): Merge conflict in simple.html
+error: could not apply 807c5b8... fb adding some trouble to simple.html
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 807c5b8... fb adding some trouble to simple.html
+kejingeng@kejins-MacBook-Pro starter-web % git checkout bigtrouble
+simple.html: needs merge
+error: you need to resolve your current index first
+kejingeng@kejins-MacBook-Pro starter-web % git branch
+* (no branch, rebasing bigtrouble)
+  Develop
+  bigtrouble
+  master
+kejingeng@kejins-MacBook-Pro starter-web % git mergetool
+Merging:
+simple.html
+
+Normal merge conflict for 'simple.html':
+  {local}: modified file
+  {remote}: modified file
+kejingeng@kejins-MacBook-Pro starter-web % gir rebase --continue
+zsh: command not found: gir
+kejingeng@kejins-MacBook-Pro starter-web % git add simple.html
+kejingeng@kejins-MacBook-Pro starter-web % git status
+interactive rebase in progress; onto 9495b00
+Last command done (1 command done):
+   pick 807c5b8 fb adding some trouble to simple.html
+No commands remaining.
+You are currently rebasing branch 'bigtrouble' on '9495b00'.
+  (all conflicts fixed: run "git rebase --continue")
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   simple.html
+
+kejingeng@kejins-MacBook-Pro starter-web % git rebase --continue 
+[detached HEAD d1beac4] fb adding some trouble to simple.html
+ Committer: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Successfully rebased and updated refs/heads/bigtrouble.
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all
+* d1beac4 (HEAD -> bigtrouble) fb adding some trouble to simple.html
+* 9495b00 (master) mb comflicting changes brewing
+* fb69eb3 mb before rebase conflicts
+* f85d6e6 Adding another change after rebase
+* bb77891 Adding another change after rebase
+* fba85c4 Thanks all my students
+* 2340d9c adding oneliner to README for rebase example
+* 36da9d4 (origin/master, origin/HEAD) update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % mate simple.html
+kejingeng@kejins-MacBook-Pro starter-web % git commit -am "adding changes after rebasing conflict"
+[bigtrouble ad248bc] adding changes after rebasing conflict
+ Committer: kejin geng <kejingeng@kejins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+kejingeng@kejins-MacBook-Pro starter-web % git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 6 commits.
+  (use "git push" to publish your local commits)
+kejingeng@kejins-MacBook-Pro starter-web % git merge bigtrouble
+Updating 9495b00..ad248bc
+Fast-forward
+ simple.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+kejingeng@kejins-MacBook-Pro starter-web % git log --oneline --graph --decorate --all             
+* ad248bc (HEAD -> master, bigtrouble) adding changes after rebasing conflict
+* d1beac4 fb adding some trouble to simple.html
+* 9495b00 mb comflicting changes brewing
+* fb69eb3 mb before rebase conflicts
+* f85d6e6 Adding another change after rebase
+* bb77891 Adding another change after rebase
+* fba85c4 Thanks all my students
+* 2340d9c adding oneliner to README for rebase example
+* 36da9d4 (origin/master, origin/HEAD) update hipster.txt
+* d29500e updating ignore file to exclude merge temp file
+*   ceefb10 Done resolving merge conflicts
+|\  
+| * 48c98e3 Making change to simple.html
+* | e28972c Adding conflict changes on purpose for git example
+|/  
+* 5c8d54b Adding instructions on how to contribute
+*   4c003d6 Merge branch 'add-copyright'
+|\  
+| * cb0b1e6 Adding copyright notice to Readme
+| * 5d8003f Adding copyright notice
+|/  
+* e6502e6 Changing title of Html file
+* e6aa2aa (Develop) Update echo witch changes from compare section
+* 1e71dd3 Adding introduction text
+* c2a8f53 Adding new section : Deployment
+* ae42085 Adding README File
+* 609ab76 Excluding log file directory
+* e22e48a deleting level1 and all children
+* 26fa7ee Deleting new file
+* 4c9de43 Ranamed level1-files to level1
+* 9c595b0 Renaming level2 file
+* 56873a1 Ranaming level3 file
+* 8b87d2c Add file recursively
+* 33863d0 More ipsum for hipsters
+* e3bff9d Update
+* ef95a4b My first commit q exit back
+* 6452db7 Update ignore file
+* 7268cf6 Adding git ignore file to exclude unwanted files
+* 40f982a update
+* c23232c Git Complete coding practice
+* 499e71c deleting level1 and level1 all children
+* 6c4645f Delete hipster.txt
+* 47d52b0 Deleting new file
+* 251d8f8 Renaming level1 file
+* c52f2cd Moving level2 file back to level 2 directory
+* 253976d Moving level2 to level3
+* 9ee8041 renaming level2 file
+* 7852665 renaming level3 file
+* b085f28 Renamed
+* 1537c43 Adding several files recursively
+* 0a85e8f more ipsum from hipsters
+* a75aa77 Adding new file
+* 694dae8 Adding more ipsum text
+* a8a944a My first commit
+*   4beb7f0 Merge pull request #6 from jasongtaylor/feature-readme
+|\  
+| * e73f914 Adding Purpose section to README
+| * 34f563b Adding README file
+|/  
+* 5c05047 Copying files from initializr project zip file and then creating simple.html as basis for super simple pages
+kejingeng@kejins-MacBook-Pro starter-web % git status
+On branch master
+Your branch is ahead of 'origin/master' by 8 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+kejingeng@kejins-MacBook-Pro starter-web % git pull origin master
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+From https://github.com/NobodyKJ/starter-web
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+kejingeng@kejins-MacBook-Pro starter-web % 
